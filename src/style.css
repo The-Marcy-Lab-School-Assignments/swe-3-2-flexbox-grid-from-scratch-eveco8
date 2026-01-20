@@ -17,3 +17,82 @@ img {
 }
 
 /* Add your styles below */
+
+body {
+  background-color: #1e1e1e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-rows: 40px;
+}
+
+h1 {
+  display: grid;
+  font-size: 80%;
+  color: #1db954;
+  justify-items: center;
+  align-items: center;
+}
+
+h2 {
+  display: grid;
+  font-size: 1.5rem;
+  color: #1db954;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+
+.playlist-grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px ;
+  gap: 15px;
+  justify-content: center;
+}
+
+.playlist-item {
+  height: 150px;
+  width: 300px;
+  background-color: #000;
+  gap: 15px;
+}
+
+span {
+    height: 100px;
+  width: 100px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  gap: 30px;
+  justify-content: end;
+}
+
+img {
+  display: grid;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.album-grid-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.album-item {
+  height: 160px;
+  width: 150px;
+  background-color: #000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
