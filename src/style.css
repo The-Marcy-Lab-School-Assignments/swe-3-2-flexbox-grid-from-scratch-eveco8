@@ -27,11 +27,13 @@ body {
 .top-bar {
   display: grid;
   grid-template-rows: 40px;
+  background-color: #000;
+  height: 120px;
 }
 
 h1 {
   display: grid;
-  font-size: 80%;
+  font-size: 25px;
   color: #1db954;
   justify-items: center;
   align-items: center;
@@ -44,6 +46,18 @@ h2 {
   padding-bottom: 20px;
   padding-top: 40px;
   padding-left: 30px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  gap: 30px;
+  justify-content: end;
+}
+
+nav>a {
+  color: #fff;
+  text-decoration: none;
 }
 
 
@@ -67,17 +81,18 @@ span {
   width: 100px;
 }
 
-nav {
+
+
+.logo {
   display: grid;
-  grid-template-columns: 50px 50px 50px;
-  gap: 30px;
-  justify-content: end;
+  justify-items: start;
 }
 
-img {
+.logo>img {
   display: grid;
   max-width: 120px;
-  max-height: 120px;
+  max-height: 120px; 
+  margin: 15px;
 }
 
 .album-grid-container {
