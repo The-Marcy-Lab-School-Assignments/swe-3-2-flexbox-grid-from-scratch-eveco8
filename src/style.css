@@ -34,7 +34,17 @@ main {
 .top-bar {
    background-color: #000;
    padding: 30px;
-}
+  }
+
+.playlist {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .album {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 
 h1 {
   font-size: 40px;
@@ -70,6 +80,12 @@ nav > div {
   gap: 30px;
 }
 
+nav > img {
+
+  max-width: 120px;
+  max-height: 120px; 
+  margin: 15px;
+}
 
 .playlist-grid-container {
   display: grid;
@@ -103,14 +119,6 @@ font-weight: bold;
 
 
 
-
-nav > img {
-
-  max-width: 120px;
-  max-height: 120px; 
-  margin: 15px;
-}
-
 .album-grid-container {
   display: flex;
   flex-direction: row;
@@ -139,12 +147,3 @@ footer {
   padding: 20px;
 }
 
-.playlist {
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-
-.album {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
