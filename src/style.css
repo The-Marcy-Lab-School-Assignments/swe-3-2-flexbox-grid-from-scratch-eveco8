@@ -27,7 +27,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
   max-width: 1200px;
 }
 
@@ -35,6 +35,20 @@ main {
    background-color: #000;
    padding: 30px;
   }
+
+.list {
+  display: flex;
+  gap: 30px;
+}
+
+.list>li>a {
+  color: white;
+  text-decoration: none;
+}
+
+.list>li>a:hover {
+  color: #1db954;
+}
 
 .playlist {
     margin-bottom: 20px;
@@ -49,7 +63,6 @@ main {
 h1 {
   font-size: 40px;
   color: #1db954;
-  
 }
 
 h2 {
@@ -57,7 +70,6 @@ h2 {
   color: #1db954;
   padding-bottom: 20px;
   padding-top: 40px;
-  padding-left: 30px;
 }
 
 nav {
@@ -87,33 +99,44 @@ nav > img {
   margin: 15px;
 }
 
+/* section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+} */
+
 .playlist-grid-container {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 200px 200px ;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
-  max-width: 1200px;
+  justify-content: center;
 }
 
-.playlist-item {
+.playlist-item > figure {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
-  height: 150px;
-  width: 300px;
   background-color: #000;
   gap: 15px;
   border-radius: 4px;
 }
 
-.playlist-item>img {
+.playlist-item {
+  align-items: center;
+  background-color: #000;
+  gap: 15px;
+  border-radius: 4px;
+}
+
+.playlist-img {
   width: 100px;
   height: 100px;
+  object-fit: cover;
   border-radius: 4px;
   padding: 8px;
 }
 
-.playlist-item > p {
+.playlist-p {
 font-weight: bold;
 }
 
@@ -122,6 +145,7 @@ font-weight: bold;
 .album-grid-container {
   display: flex;
   flex-direction: row;
+  justify-content: start;
   gap: 20px;
   padding: 25px;
 }
@@ -132,11 +156,11 @@ font-weight: bold;
   padding: 15px;
 }
 
-.album-item > p:first-of-type {
+.album-item figcaption p:first-of-type {
   font-weight: bold;
 }
 
-.album-item > p:last-of-type {
+.album-item figcaption p:last-of-type {
   font-size: .9rem;
 }
 
